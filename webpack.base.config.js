@@ -70,4 +70,8 @@ module.exports = {
       }
     })
   ],
+  resolve: {
+    modules: ['node_modules', 'src'],
+    extensions: ['.js', '.jsx'],
+  }
 };
