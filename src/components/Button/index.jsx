@@ -5,9 +5,7 @@ class Button extends Component {
 
   render() {
     return (
-      <div>
-        Hello Button! 
-      </div>)
+      <button className={this.props.className}>{this.props.caption}</button>)
     }
 };
 

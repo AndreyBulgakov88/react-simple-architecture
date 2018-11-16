@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: {
@@ -73,5 +74,8 @@ module.exports = {
   resolve: {
     modules: ['node_modules', 'src'],
     extensions: ['.js', '.jsx'],
+    alias: {
+      src: path.resolve(__dirname, 'src')
+    }
   }
 };

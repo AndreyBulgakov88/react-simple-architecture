@@ -32,6 +32,7 @@
     "imagemin-pngquant": "^6.0.0",
     "imagemin-svgo": "^7.0.0",
     "json-loader": "^0.5.7",
+    "lodash": "^4.17.11",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.10.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
@@ -57,7 +58,6 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "img-loader": "^3.0.1",
-    "lodash": "^4.17.11"
+    "img-loader": "^3.0.1"
   }
 }

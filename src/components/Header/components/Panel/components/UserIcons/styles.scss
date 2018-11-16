@@ -1,0 +1,25 @@
+%icon-item_size_37 {
+  width: 37px;
+  height: 37px;
+}
+
+
+.likes {
+  @extend %icon-item_size_37;
+  background-color: aqua;
+}
+
+.messages {
+  @extend %icon-item_size_37;
+  background-color: aquamarine;
+}
+
+.notifications {
+  @extend %icon-item_size_37;
+  background-color: blanchedalmond;
+}
+
+.avatar {
+  @extend %icon-item_size_37;
+  background-color: burlywood;
+}

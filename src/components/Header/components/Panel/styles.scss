@@ -1,0 +1,45 @@
+@import 'src/styles/extends';
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.support {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.support__logo {
+  @extend %img-placeholder;
+  margin-right: 30px;
+  width: 70px;
+  height: 30px;
+}
+
+.support__link {
+  font-weight: 700;
+
+  margin-right: 50px;
+
+  color: lightskyblue;
+}
+
+.user-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.user-icons__logout {
+  font-weight: 700;
+  
+  padding: 8px 27px;
+  margin-left: 20px;
+
+  background-color: lightsteelblue;
+}

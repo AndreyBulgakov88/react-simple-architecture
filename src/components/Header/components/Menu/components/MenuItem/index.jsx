@@ -5,9 +5,7 @@ class MenuItem extends Component {
 
   render() {
     return (
-      <div>
-        Hello MenuItem! 
-      </div>)
+      <a className={this.props.className} href="#">{this.props.name}</a>)
     }
 };
 

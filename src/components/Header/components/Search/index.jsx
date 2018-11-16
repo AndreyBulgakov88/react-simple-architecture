@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-
+import styles from './styles.scss';
 
 class Search extends Component {
 
   render() {
     return (
-      <div>
-        Hello Search! 
-      </div>)
+      <input type="text" className={styles["search-input"]} placeholder="search"/>)
     }
 };
 

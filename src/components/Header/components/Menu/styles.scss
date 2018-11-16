@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  
+  margin: 20px 0;
+}
+
+.menu__menu-item {
+  color: brown;
+}
