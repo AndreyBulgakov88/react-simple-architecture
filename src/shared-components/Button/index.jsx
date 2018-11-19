@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import styles from './styles.scss';
+import classNames from 'classnames';
 
 class Button extends Component {
 
   render() {
     return (
-      <button className={this.props.className}>{this.props.caption}</button>)
+      <button className={classNames(styles.button, this.props.className)}>{this.props.caption}</button>)
     }
 };
 

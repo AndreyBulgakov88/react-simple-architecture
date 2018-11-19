@@ -1,4 +1,36 @@
-.photos-characteristics {
+.product-card {
   display: flex;
   flex-direction: row;
+}
+
+.characteristics-column {
+  width: 100%;
+
+  margin-left: 130px;
+}
+
+.actions {
+  position: relative;
+
+  display: flex;
+
+  margin-bottom: 30px;
+}
+
+.actions__button-buy {
+  text-transform: uppercase;
+
+  width: 65%;
+  padding: 15px;
+
+  background-color: darkkhaki;
+}
+
+.actions__button-buy-hint {
+  position: absolute;
+
+  font-size: 13px;
+
+  top: 50px;
+  left: 72px;
 }
