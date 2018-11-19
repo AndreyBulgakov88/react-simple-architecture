@@ -4,7 +4,7 @@ class SocialItem extends Component {
 
   render() {
     return (
-      <a href="#">{this.props.text}</a>)
+      <a href="#" className={this.props.className}>{this.props.text}</a>)
     }
 };
 

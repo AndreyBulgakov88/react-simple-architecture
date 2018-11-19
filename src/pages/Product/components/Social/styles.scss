@@ -8,10 +8,30 @@
   display: flex;
   justify-content: start;
  
-  text-decoration: underline;
   text-transform: uppercase;
   font-size: 15px;
 
   margin-top: 20px;
-  padding-right: 50px;
+}
+
+.social-items__text {
+  text-transform: none;
+  
+  margin: 0;
+  margin-right: 30px;
+}
+
+.social-items__item {
+  color: black;
+  border: 1px solid royalblue;
+
+  margin-right: 25px;
+}
+
+.social-items__shares {
+  text-transform: none;
+  font-style: italic;
+  
+  margin: 0;
+  margin-left: auto;
 }

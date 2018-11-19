@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
 import SocialItem from 'Product/components/SocialItem';
+import classNames from 'classnames';
 
 class Social extends Component {
   constructor(props) {
@@ -19,10 +20,12 @@ class Social extends Component {
   render() {
     return (
       <div className={styles['social-items']}> 
+        <p className={styles['social-items__text']}>Share: </p>
         {_.map(this.state.socialItems, (socialItem) => (
-            <SocialItem key={_.uniqueId()} className={socialItem.className} text={socialItem.text}/>
+            <SocialItem key={_.uniqueId()} className={classNames(socialItem.className, styles['social-items__item'])} text={socialItem.text}/>
           ))
         }
+        <p className={styles['social-items__shares']}>0 shares</p>
       </div>)
     }
 };

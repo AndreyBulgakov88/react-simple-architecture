@@ -23,6 +23,7 @@ class PhotosAndDescription extends Component {
             that does not exist in the leading master data system,
             but is required for planning purposes.
           </p>
+          <hr />
           <Social />
         </div>
       </div>)
