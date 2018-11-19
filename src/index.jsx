@@ -11,8 +11,8 @@ ReactDOM.render(
   <BrowserRouter>
     <div className={styles.container}>
       <Header />
-      <Route exact path="/" component={Home} />
-      <Route path="/product" component={Product} />
+      <Route exact path="/" component={Product} />
+      <Route path="/product" component={Home} />
       <Footer />
     </div>
   </BrowserRouter>, 

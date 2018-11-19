@@ -2,21 +2,9 @@ import React, { Component } from 'react';
 import styles from './styles.scss';
 import stylesBase from 'src/styles/base.scss';
 import classNames from 'classnames';
-import Social from 'src/components/Social';
+import Social from './components/Social';
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      socialItems: [
-        {className: styles['social-facebook'], text: 'fb'},
-        {className: styles['social-instagram'], text: 'ig'},
-        {className: styles['social-twitter'], text: 'tw'},
-        {className: styles['social-google'], text: 'go'}        
-      ]
-    }
-  }
 
   render() {
     return (
@@ -48,7 +36,7 @@ class Footer extends Component {
             <a href="#">Forum</a>
             <a href="#">Send message</a>
             <a href="#">Outfits</a>
-            <Social className={styles['footer__social-items']} socialItems={this.state.socialItems}/>
+            <Social/>
           </div>
         </div>
         <div className={styles.footer__end}>

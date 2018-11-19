@@ -1,0 +1,28 @@
+@import 'src/styles/extends';
+
+.photos-overall {
+  display: flex;
+}
+
+.photo-previews {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 20px;
+}
+
+.active-photo-column {
+  width: 500px;
+}
+
+.active-photo-column__photo {
+  @extend %img-placeholder;
+  
+  width: 500px;
+  height: 722px;
+  margin-bottom: 20px;
+}
+
+.active-photo-column__description {
+  line-height: 30px;
+}

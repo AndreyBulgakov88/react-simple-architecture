@@ -1,0 +1,9 @@
+@import 'src/styles/extends';
+
+.photo {
+  @extend %img-placeholder;
+  
+  width: 90px;
+  height: 130px;
+  margin-bottom: 20px;
+}

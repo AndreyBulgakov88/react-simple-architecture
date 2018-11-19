@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-items {
+  display: flex;
+  justify-content: start;
+ 
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  margin-top: 20px;
+  padding-right: 50px;
+}
