@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import PhotoPreview from './components/PhotoPreview';
+import PhotoPreview from 'Product/components/PhotoPreview';
 import styles from './styles.scss';
 import _ from 'lodash';
-import Social from './components/Social';
+import Social from 'Product/components/Social';
 
 class PhotosAndDescription extends Component {
 

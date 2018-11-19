@@ -75,7 +75,11 @@ module.exports = {
     modules: ['node_modules', 'src'],
     extensions: ['.js', '.jsx'],
     alias: {
-      src: path.resolve(__dirname, 'src')
+      src: path.resolve(__dirname, 'src'),
+      Home: path.resolve(__dirname, 'src/pages/Home'),
+      Product: path.resolve(__dirname, 'src/pages/Product'),
+      sharedComponents: path.resolve(__dirname, 'src/shared-components'),
+      styles: path.resolve(__dirname, 'src/styles'),
     }
   }
 };

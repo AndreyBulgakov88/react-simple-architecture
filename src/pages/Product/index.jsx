@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
-import stylesBase from 'src/styles/base.scss';
-import PhotosAndDescription from './components/PhotosAndDescription';
-import Characteristics from './components/Characteristics';
+import stylesBase from 'styles/base.scss';
+import PhotosAndDescription from 'Product/components/PhotosAndDescription';
+import Characteristics from 'Product/components/Characteristics';
 
 class Product extends Component {
   constructor(props) {
