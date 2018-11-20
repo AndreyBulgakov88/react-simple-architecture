@@ -34,3 +34,35 @@
   top: 50px;
   left: 72px;
 }
+
+.author-products,
+.similar-products {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.author-products__head, 
+.author-products__floor-top, 
+.author-products__floor-bottom, 
+.author-products__items,
+.similar-products__head, 
+.similar-products__floor-top, 
+.similar-products__floor-bottom, 
+.similar-products__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-products__floor-top p, 
+.author-products__floor-bottom p,
+.similar-products__floor-top p, 
+.similar-products__floor-bottom p {
+  margin: 0;
+}
+
+.author-products__items,
+.similar-products__items {
+  justify-content: start;
+  flex-wrap: wrap;
+}
