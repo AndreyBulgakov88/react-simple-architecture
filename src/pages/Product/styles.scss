@@ -42,27 +42,21 @@
 }
 
 .author-products__head, 
-.author-products__floor-top, 
-.author-products__floor-bottom, 
-.author-products__items,
-.similar-products__head, 
-.similar-products__floor-top, 
-.similar-products__floor-bottom, 
-.similar-products__items {
+.similar-products__head,
+.products-list,
+.products-list__item-floor-top, 
+.products-list__item-floor-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.author-products__floor-top p, 
-.author-products__floor-bottom p,
-.similar-products__floor-top p, 
-.similar-products__floor-bottom p {
+.products-list__item-floor-top p, 
+.products-list__item-floor-bottom p {
   margin: 0;
 }
 
-.author-products__items,
-.similar-products__items {
+.products-list {
   justify-content: start;
   flex-wrap: wrap;
 }

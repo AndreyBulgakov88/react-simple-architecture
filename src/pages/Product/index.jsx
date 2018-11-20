@@ -46,67 +46,68 @@ class Product extends Component {
     }
   }
 
+  renderProductsList(productsList) {
+    return (
+      <div className={styles["products-list"]}>
+        {_.map(productsList, (productItem) => (
+            <ProductItem key={_.uniqueId()} productItem={productItem}>
+              <div className={styles["products-list__item-floor"]}>
+
+                <div className={styles["products-list__item-floor-top"]}>
+                  <p>{productItem.title}</p>
+                  <p><strong>{productItem.price}</strong></p>
+                </div>
+
+                <div className={styles["products-list__item-floor-bottom"]}>
+                  <p>{productItem.year}</p>
+                  <p>{productItem.weight}</p>
+                </div>
+
+              </div>
+            </ProductItem>
+          ))
+        }
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className={stylesBase.container}>
         <p>Products / Category B / Class A </p>
+
         <div className={styles["product-card"]}>
           <PhotosAndDescription photoItems={this.state.photos}/>
+
           <div className={styles["characteristics-column"]}>
             <Characteristics characteristics={this.state.characteristics}/> 
+
             <div className={styles["actions"]}>
               <Button className={styles["actions__button-buy"]} caption="Buy"/>
               <span className={styles["actions__button-buy-hint"]}>Buy this product!</span>
               <ButtonLike />
             </div>
+
             <Tags tags={this.state.tags} />
             <Author />
           </div>
         </div>
+        
         <div className={styles["author-products"]}>
           <div className={styles["author-products__head"]}>
-            <h2>Other products from author</h2>
+            <h2>Products from the author</h2>
             <Button caption="Buy all"/>
           </div>
-          <div className={styles["author-products__items"]}>
-            {_.map(this.state.authorProducts, (productItem) => (
-                <ProductItem key={_.uniqueId()} productItem={productItem}>
-                  <div className={styles["author-products__floor"]}>
-                    <div className={styles["author-products__floor-top"]}>
-                      <p>{productItem.title}</p>
-                      <p><strong>{productItem.price}</strong></p>
-                    </div>
-                    <div className={styles["author-products__floor-bottom"]}>
-                      <p>{productItem.year}</p>
-                      <p>{productItem.weight}</p>
-                    </div>
-                  </div>
-                </ProductItem>
-              ))
-            }
-          </div>
+
+          {this.renderProductsList(this.state.authorProducts)}
         </div>
+
         <div className={styles["similar-products"]}>
           <div className={styles["similar-products__head"]}>
             <h2>Similar products</h2>
           </div>
-          <div className={styles["similar-products__items"]}>
-            {_.map(this.state.similarProducts, (productItem) => (
-                <ProductItem key={_.uniqueId()} productItem={productItem}>
-                  <div className={styles["similar-products__floor"]}>
-                    <div className={styles["similar-products__floor-top"]}>
-                      <p>{productItem.title}</p>
-                      <p><strong>{productItem.price}</strong></p>
-                    </div>
-                    <div className={styles["similar-products__floor-bottom"]}>
-                      <p>{productItem.year}</p>
-                      <p>{productItem.weight}</p>
-                    </div>
-                  </div>
-                </ProductItem>
-              ))
-            }
-          </div>
+
+          {this.renderProductsList(this.state.similarProducts)}
         </div>
       </div>)
     }
