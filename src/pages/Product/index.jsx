@@ -51,18 +51,14 @@ class Product extends Component {
       <div className={styles["products-list"]}>
         {_.map(productsList, (productItem) => (
             <ProductItem key={_.uniqueId()} productItem={productItem}>
-              <div className={styles["products-list__item-floor"]}>
+              <div className={styles["products-list__item-floor-top"]}>
+                <p>{productItem.title}</p>
+                <p><strong>{productItem.price}</strong></p>
+              </div>
 
-                <div className={styles["products-list__item-floor-top"]}>
-                  <p>{productItem.title}</p>
-                  <p><strong>{productItem.price}</strong></p>
-                </div>
-
-                <div className={styles["products-list__item-floor-bottom"]}>
-                  <p>{productItem.year}</p>
-                  <p>{productItem.weight}</p>
-                </div>
-
+              <div className={styles["products-list__item-floor-bottom"]}>
+                <p>{productItem.year}</p>
+                <p>{productItem.weight}</p>
               </div>
             </ProductItem>
           ))
@@ -74,6 +70,7 @@ class Product extends Component {
   render() {
     return (
       <div className={stylesBase.container}>
+        <hr/>
         <p>Products / Category B / Class A </p>
 
         <div className={styles["product-card"]}>

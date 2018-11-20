@@ -1,0 +1,23 @@
+.active-users {
+  margin-bottom: 100px;
+}
+
+.active-users__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active-users__head a {
+  display: block;
+
+  text-align: end;
+  text-decoration: underline;
+
+  color: grey;
+}
+
+.active-users__items {  
+  display: flex;
+  justify-content: space-between;
+}
