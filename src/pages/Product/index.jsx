@@ -6,6 +6,7 @@ import Characteristics from 'Product/components/Characteristics';
 import Button from 'sharedComponents/Button';
 import ButtonLike from 'Product/components/ButtonLike';
 import Tags from 'Product/components/Tags';
+import Author from 'Product/components/Author';
 
 class Product extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class Product extends Component {
               <ButtonLike />
             </div>
             <Tags tags={this.state.tags} />
+            <Author />
           </div>
         </div>
       </div>)

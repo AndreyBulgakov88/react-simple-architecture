@@ -9,7 +9,7 @@ class Head extends Component {
       <div className={styles.head}>
         <h3 className={styles['head__header']}>Product X (temporary created)</h3>
         <div className={styles['head__price']}>
-          <p>145 Zl</p>
+          <p><strong>145 Zl</strong></p>
           <Button caption="Compare"/>
         </div>
       </div>)
