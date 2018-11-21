@@ -2,10 +2,12 @@
 
 .product-item {
   margin-top: 15px;
+  margin-right: 20px;
 }
 
 .product-item__image {
   @extend %img-placeholder;
+
   width: 229px;
   height: 330px;
 }

@@ -50,13 +50,13 @@ class Product extends Component {
     return (
       <div className={styles["products-list"]}>
         {_.map(productsList, (productItem) => (
-            <ProductItem key={_.uniqueId()} productItem={productItem}>
-              <div className={styles["products-list__item-floor-top"]}>
+            <ProductItem key={_.uniqueId()} productItem={productItem} className={styles['products-list__item']}>
+              <div className={styles["products-list__item-floor-row"]}>
                 <p>{productItem.title}</p>
                 <p><strong>{productItem.price}</strong></p>
               </div>
 
-              <div className={styles["products-list__item-floor-bottom"]}>
+              <div className={styles["products-list__item-floor-row"]}>
                 <p>{productItem.year}</p>
                 <p>{productItem.weight}</p>
               </div>

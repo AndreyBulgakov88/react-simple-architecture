@@ -44,19 +44,25 @@
 .author-products__head, 
 .similar-products__head,
 .products-list,
-.products-list__item-floor-top, 
-.products-list__item-floor-bottom {
+.products-list__item-floor-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.products-list__item-floor-top p, 
-.products-list__item-floor-bottom p {
+.products-list__item-floor-row p {
   margin: 0;
 }
 
 .products-list {
   justify-content: start;
   flex-wrap: wrap;
+}
+
+.products-list__item {
+  margin-right: 63px;
+}
+
+.products-list__item:nth-child(4n) {
+  margin-right: 0;
 }

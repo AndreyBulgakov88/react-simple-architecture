@@ -10,6 +10,7 @@ import SubscriptionForm from 'Home/components/SubscriptionForm';
 import ForumTopicItem from 'Home/components/ForumTopicItem';
 import Button from 'sharedComponents/Button';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 class Home extends Component {
 
@@ -79,6 +80,14 @@ class Home extends Component {
     }
   }
 
+  static contextTypes = {
+    router: PropTypes.object.isRequired
+  };
+
+  onDetailsClick = () => {
+    this.context.router.history.push(`/product`);
+  }
+
   render() {
     return (
       <div>
@@ -129,7 +138,7 @@ class Home extends Component {
                   <p>{this.state.yourOutfit.year}</p>
                 </div>  
               </div>  
-              <Button className={styles["your-outfit__button-details"]} caption="Product details"/>
+              <Button className={styles["your-outfit__button-details"]} caption="Product details" onClick={this.onDetailsClick}/>
             </div>
 
             <div className={styles["remains-outfits"]}>
