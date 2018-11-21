@@ -1,0 +1,41 @@
+@import 'src/styles/extends';
+
+.item {
+  width: 45%;
+}
+
+.item__title {
+  font-weight: 700;
+  font-size: 20px;
+
+  color: brown;
+}
+
+.floor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.floor__avatar {
+  @extend %img-placeholder;
+
+  height: 30px;
+  width: 30px;
+
+  margin-right: 0;
+}
+
+.floor__button-new-message {
+  padding: 5px;
+  margin-left: 180px;
+}
+
+.author-name-role {
+  margin-left: 5px;
+}
+
+.author-name-role__name,
+.author-name-role__role {
+  margin: 0;
+}

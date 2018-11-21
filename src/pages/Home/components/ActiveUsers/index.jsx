@@ -23,7 +23,7 @@ class ActiveUsers extends Component {
     return (
       <div className={styles['active-users']}> 
         <div className={styles['active-users__head']}>
-          <h3>Active users</h3>
+          <h2>Active users</h2>
           <a href="#">Show all</a>
         </div>
         <div className={styles['active-users__items']}>

@@ -1,12 +1,17 @@
+@import 'src/styles/extends';
+
 .last-products,
-.favorite-products {
+.favorite-products,
+.random-products {
   position: relative;
   margin-top: 140px;
   margin-bottom: 100px;
 }
 
 .last-products__head h2,
-.favorite-products__head h2 {
+.your-outfit h2,
+.favorite-products__head h2,
+.random-products__head h2 {
   position: absolute;
   top: 79%;
   left: -5%;
@@ -15,8 +20,120 @@
   transform-origin: left;
 }
 
+.remains-outfits__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.outfits {
+  display: flex;
+  justify-content: space-between;  
+  align-items: flex-start;
+}
+
+.your-outfit {
+  position: relative;
+}
+
+.your-outfit__image {
+  @extend %img-placeholder;
+
+  width: 500px;
+  height: 600px;
+}
+
+.your-outfit__avatar {
+  @extend %img-placeholder;
+  
+  width: 40px;
+  height: 40px;
+
+  margin: 0;
+}
+
+.your-outfit__button {
+  position: absolute;
+  top: 85%;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.your-outfit__button-close {
+  left: 39%;
+}
+
+.your-outfit__button-like {
+  left: 52%;
+}
+
+.your-outfit__button-details {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.your-outfit__floor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.your-outfit__floor-column {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.your-outfit__floor-column:first-of-type {
+  margin-right: auto;
+}
+
+.your-outfit__floor-column p {
+  margin: 0;
+}
+
+.remains-outfits {
+  margin-left: 83px;
+}
+
+.remains-outfits__head h3 {
+  margin: 0;
+}
+
+.forum-topics__head,
+.random-products__head,
+.remains-outfits__head {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.forum-topics__head {
+  margin-bottom: 30px;
+}
+
+.forum-topics__head h2 {
+  margin: 0;
+}
+
+.forum-topics__items {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 70px;
+}
+
 .last-products__head a,
-.favorite-products__head a {
+.favorite-products__head a,
+.random-products__head a {
   display: block;
 
   text-align: end;
@@ -25,27 +142,34 @@
   color: grey;
 }
 
-.last-products__items,
-.last-products__item-floor-top, 
-.last-products__item-floor-bottom,
-.favorite-products__items,
-.favorite-products__item-floor-top, 
-.favorite-products__item-floor-bottom {
+.forum-topics__head a,
+.remains-outfits__head a {
+  text-decoration: underline;
+
+  color: grey;  
+}
+
+.last-products__item-floor-row,
+.remains-outfits__item-floor-row,
+.favorite-products__item-floor-row
+.random-products__item-floor-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.last-products__item-floor-top p, 
-.last-products__item-floor-bottom p,
-.favorite-products__item-floor-top p, 
-.favorite-products__item-floor-bottom p {
+.last-products__item-floor-row p, 
+.remains-outfits__item-floor-row p,
+.favorite-products__item-floor-row p,
+.random-products__item-floor-row p {
   margin: 0;
 }
 
 .last-products__items,
-.favorite-products__items {
-  justify-content: start;
+.favorite-products__items,
+.random-products__items {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 

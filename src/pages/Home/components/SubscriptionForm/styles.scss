@@ -1,0 +1,22 @@
+.title {
+  margin-left: 200px; 
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+}
+
+.subscription-form__field {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin-right: 20px;
+}
